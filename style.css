@@ -12,6 +12,15 @@
     padding: 0;
     user-select: none;
     -webkit-user-select: none;
+    /* 全局移除移动端点击高亮 */
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+*:focus,
+*:active {
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 body {
@@ -192,6 +201,21 @@ h1.glitch::after {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    /* 移除移动端点击高亮 */
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    /* 移除轮廓线 */
+    outline: none;
+    outline: 0;
+    /* 移除触摸反馈 */
+    touch-action: manipulation;
+}
+
+.muyu-container:focus,
+.muyu-container:active,
+.muyu-container:focus-visible {
+    outline: none;
+    outline: 0;
     -webkit-tap-highlight-color: transparent;
 }
 
@@ -202,15 +226,36 @@ h1.glitch::after {
     transition: transform 0.05s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     filter: drop-shadow(0 0 15px var(--neon-pink));
     z-index: 2;
+    /* 移除移动端点击高亮 */
     -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    /* 移除触摸相关效果 */
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     user-select: none;
+    /* 移除轮廓线 */
+    outline: none;
+    outline: 0;
+    border: none;
+    /* 移除触摸反馈 */
+    touch-action: manipulation;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.muyu-img:focus,
+.muyu-img:active,
+.muyu-img:focus-visible {
+    outline: none;
+    outline: 0;
+    border: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .muyu-img:active,
 .muyu-img.active {
     transform: scale(0.92);
+    outline: none;
 }
 
 .ripple-ring {
