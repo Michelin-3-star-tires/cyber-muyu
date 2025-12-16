@@ -192,6 +192,7 @@ h1.glitch::after {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .muyu-img {
@@ -201,6 +202,10 @@ h1.glitch::after {
     transition: transform 0.05s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     filter: drop-shadow(0 0 15px var(--neon-pink));
     z-index: 2;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 .muyu-img:active,
