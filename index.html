@@ -1,47 +1,52 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CYBER MUYU 2077</title>
+    <title>赛博木鱼 2077</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Noto+Sans+SC:wght@400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Noto+Sans+SC:wght@400;700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <div class="scanlines"></div>
     <div class="container">
         <header>
-            <h1 class="glitch" data-text="CYBER MUYU">CYBER MUYU</h1>
-            <div class="subtitle">ELECTRONIC MERIT ACCUMULATION SYSTEM</div>
+            <h1 class="glitch" data-text="赛博木鱼">赛博木鱼</h1>
+            <div class="subtitle">电子功德积累系统</div>
         </header>
 
         <main>
             <div class="merit-display">
-                <span class="label">CURRENT MERIT // 当前功德</span>
+                <span class="label">当前功德</span>
                 <div id="merit-count" class="counter">0</div>
             </div>
 
             <div class="muyu-container">
                 <div class="ripple-ring"></div>
                 <div class="ripple-ring delay-1"></div>
-                <img src="cyber_wooden_fish.png" alt="Cyber Wooden Fish" id="muyu" class="muyu-img">
+                <img src="cyber_wooden_fish.png" alt="赛博木鱼" id="muyu" class="muyu-img">
             </div>
 
-            <p class="instruction">TAP SCREEN OR PRESS [SPACE]</p>
+            <p class="instruction">点击屏幕或按下空格键</p>
         </main>
-        
+
         <footer>
             <div class="system-status">
-                <span class="status-dot"></span> SYSTEM ONLINE
+                <span class="status-dot"></span> 系统在线
             </div>
             <div class="controls">
-                <button id="reset-btn">RESET KARMA</button>
+                <button id="reset-btn">重置功德</button>
             </div>
         </footer>
     </div>
     <div id="particles-container"></div>
     <script src="script.js"></script>
 </body>
+
 </html>
